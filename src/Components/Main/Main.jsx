@@ -98,8 +98,8 @@ const Data = [
   {
     id: 9,
     imgSrc: img9,
-    destTitle: 'Machu Picchu',
-    location: 'Peru',
+    destTitle: 'Kathmandu',
+    location: 'Nepal',
     grade: 'CULTURAL RELAX',
     fees: '$700',
     description: 'Huayna Picchu is a mountain in Peru, rising over Machu Picchu, the so-called Lost City of Incas. This place is popular among tourists as the sunrise from the sun gate is simply spectacular.'
