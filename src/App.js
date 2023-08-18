@@ -1,16 +1,22 @@
 import React from 'react'
-import './App.css'
+import './app.css'
 import Navbar from './Components/Navbar/Navbar'
-import Home from './Components/Home/Home'
-import Main from './Components/Main/Main'
 import Footer from './Components/Footer/Footer'
+import Home from './pages/home/home'
+
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 const App = () => {
   return (
     <>
       <Navbar />
-      <Home />
-      <Main />
+      <BrowserRouter>
+        <Routes>
+          <Route path='/'>
+            <Route index element={<Home />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
       <Footer />
     </>
   )

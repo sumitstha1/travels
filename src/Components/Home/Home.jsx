@@ -12,7 +12,7 @@ import video from '../../Assets/video.mp4'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 
-const Home = () => {
+const HomeComp = () => {
 
   useEffect(() => {
     Aos.init({duration: 2000})
@@ -88,4 +88,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default HomeComp
