@@ -5,6 +5,7 @@ import { HiOutlineLocationMarker, HiOutlineClipboardCheck } from 'react-icons/hi
 import Aos from 'aos'
 import useFetch from "../../hooks/useFetch"
 import 'aos/dist/aos.css'
+import { Link } from 'react-router-dom'
 
 
 // const Data = [
@@ -151,9 +152,9 @@ const Main = () => {
                         <p>{e.meta_desc}</p>
                       </div>
 
-                      <button className="btn flex">
+                      <Link to={`/destination/${e.slug}`}><button className="btn flex">
                         DETAILS <HiOutlineClipboardCheck className='icon' />
-                      </button>
+                      </button></Link>
                     </div>
                   </div>
                 )

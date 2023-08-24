@@ -5,6 +5,7 @@ import Footer from './Components/Footer/Footer'
 import Home from './pages/home/home'
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import SingleDestination from './Components/SinglePage/SingleDestination'
 
 const App = () => {
   return (
@@ -14,6 +15,9 @@ const App = () => {
         <Routes>
           <Route path='/'>
             <Route index element={<Home />} />
+          </Route>
+          <Route path='destination'>
+            <Route path=':slug' element={<SingleDestination />} />
           </Route>
         </Routes>
       </BrowserRouter>
